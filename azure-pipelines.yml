@@ -40,7 +40,7 @@ steps:
   inputs:  
         targetType: 'inline'  
         script: |  
-          $easyTestPath="dxT1094310v1.Module\FunctionalTests"
+          $easyTestPath="TestAzureNET.Module\FunctionalTests"
           $targetFrameworkFilter="*\net452\*"
           $tempFolderName="MyTempFolder"
           $targetVersionSpec="22.2.6"
@@ -57,6 +57,6 @@ steps:
 - task: PublishPipelineArtifact@1  
   condition: succeededOrFailed()  
   inputs:  
-        targetPath: '.\dxT1094310v1.Module\FunctionalTests\'  
+        targetPath: '.\TestAzureNET.Module\FunctionalTests\'  
         artifact: 'TestsResultFiles'  
         publishLocation: 'pipeline'  
