@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Date="5/22/2023">
+  <Test Name="sample" ApplicationName="TestAzureNET" Started="5/22/2023 6:10:00 PM" Elapsed="00:00:30.3684010" Result="Failed" ApplicationViews="sample_TestAzureNET_View.jpeg" MachineName="KOZHEVNIKOV-NBX" IP="172.21.74.221">
+    <Error Type="DevExpress.EasyTest.Framework.TestException">
+      <Message><![CDATA[CheckFieldValues: incorrect 'Last Name' field value (expected value: 'testUnExpecteResv3', actual value: 'testset'), line 12]]></Message>
+      <Stack />
+    </Error>
+  </Test>
+</Tests>

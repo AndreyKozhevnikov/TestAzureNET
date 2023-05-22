@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Applications>
+		<!-- Win -->
+		<Application
+            Name="TestAzureNET"
+            FileName="[WinAppBin]\TestAzureNET.Win.exe"
+            AdapterFileName="[WinAdapterFileName]"
+            CommunicationPort="4100"/>
+	</Applications>
+	<TestDatabases>
+		<Database xsi:type="TestMSSQLDatabase" Server="(localdb)\mssqllocaldb" DBName="TestMSSQLDatabase"/>
+	</TestDatabases>
+
+	<Aliases>
+		<Alias Name="WinAppBin" Value="[ConfigPath]\..\..\TestAzureNET.Win\Bin\EasyTest\net6.0-windows" />
+		<Alias Name="WinAdapterFileName" Value="[WinAppBin]\DevExpress.ExpressApp.EasyTest.WinAdapter.v22.2.dll" />
+	</Aliases>
+</Options>
