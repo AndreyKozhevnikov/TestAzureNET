@@ -36,9 +36,9 @@ static class Program {
             return 0;
         }
         DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.Latest;
-#if EASYTEST
+//#if EASYTEST
         DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register();
-#endif
+//#endif
         WindowsFormsSettings.LoadApplicationSettings();
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
